@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: smart-xray
+  name: somelse
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: smart-xray
+      app: somelse
   template:
     metadata:
       labels:
-        app: smart-xray
+        app: somelse
     spec:
       containers:
-      - image: okteto.dev/smart-xray:latest
-        name: smart-xray
+      - image: okteto.dev/somelse:latest
+        name: somelse
         ports:
         - containerPort: 8080
